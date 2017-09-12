@@ -7,40 +7,49 @@
 	<link rel="stylesheet" href="">
 
 	<style>
+
+		.col-1{
+			width: 33.3%;
+			float: left;
+		}
+		
+		@media (max-width: 800px) and (min-width: 481px){
+			.col-1{
+				width: 50%;
+				float: left;
+			}
+		}
+		@media (max-width: 480px){
+			.col-1{
+				width: 100%;
+				float: left;
+			}
+		}
+
 		.top{
-			text-align:  center;
+			text-align: center;
 			color: white;
 			background-color: black;
 			padding: 10vh;
 		}
 		.img-responsive{
 			max-width: 100%;
-			box-sizing: border-box;
 		}
 
 		.row{
 			clear: both;
 			width: 100%;
-			display: inline-block;
+		}
+		
+		.row > div {
 			box-sizing: border-box;
 		}
-		.col-1{
-			width: 33%;
-			display: inline-block;
-			box-sizing: border-box;
-		}
+
+
 
 		.product{
-			padding: 5px;
+			padding: 1%;
 		}
-
-			@media (max-width: 480px) {
-			 .col-1{
-			 	width: 100%;
-				display: block;
-				box-sizing: border-box;
-			 }
-			}
 
 	</style>
 </head>
